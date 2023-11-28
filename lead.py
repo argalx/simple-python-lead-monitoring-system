@@ -16,7 +16,18 @@ print("Welcome to Simple Python Lead Monitoring System")
 
 # User Action Logic
 while True:
-    userInput = int(input("Options: (1) Add Lead, (2) View Lead, (3) Exit Program"))
+    try:
+        userInput = int(input("Menu: (1) Add Lead, (2) View Lead, (3) Exit Program: "))
 
-    
+        if userInput == 1:
+            pass
+        elif userInput == 2:
+            pass
+        elif userInput == 3:
+            break
+        else:
+            print("Invalid input.")
+
+    except ValueError:
+        print("Invalid input.")
     
