@@ -5,26 +5,18 @@ class Lead:
         self._phoneNumber = phoneNumber
         self._email = email
 
-    @property
-    def name(self):
-        return self._name
-
-    @name.setter
-    def name(self, value):
+    def add(self):
         pass
 
-    @property
-    def phoneNumber(self):
-        return self._phoneNumber
-
-    @phoneNumber.setter
-    def phoneNumber(self, value):
+    def view(self):
         pass
 
-    @property
-    def email(self):
-        return self._email
+# Welcome Message
+print("Welcome to Simple Python Lead Monitoring System")
 
-    @email.setter
-    def email(self, value):
-        pass
+# User Action Logic
+while True:
+    userInput = int(input("Options: (1) Add Lead, (2) View Lead, (3) Exit Program"))
+
+    
+    
