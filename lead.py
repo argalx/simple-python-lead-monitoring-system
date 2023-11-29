@@ -26,13 +26,10 @@ class Lead:
         leadEntry = {"name": name, "phoneNumber": phoneNumber, "email": email}
 
         # Initialize JSON file
-        with open(fileLocation, "r+") as lead:
+        with open(fileLocation, "w") as lead:
 
             # Append JSON file with new entry
             leadContent["leads"].append(leadEntry)
-
-            # Pointer start at 0
-            lead.seek(0)
 
             # Rewrite JSON file with updated entry
             json.dump(leadContent, lead)
