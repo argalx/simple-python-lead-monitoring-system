@@ -1,12 +1,11 @@
 # simple-python-lead-monitoring-system
 Simple Python Lead Monitoring System
 
-Dependencies:
-None
 
 File Structure:
-lead.json - Used for storing lead entry when you run lead.py
-lead.py - Lead monitoring program
+Main Folder
+    |---lead.json - Used for storing lead entry when you run lead.py
+    |---lead.py - Lead monitoring program
 
 How to use:
 1. Run lead.py and select one of the three options:

@@ -1,9 +1,9 @@
-import json
-import os
+from json import dump, load
+from os import system
 from time import sleep
 
 # clear interpreter variable
-clear = lambda: os.system('cls')
+clear = lambda: system('cls')
 
 # File Location
 fileLocation = "D:\Documents\GitRepos\simple-python-lead-monitoring-system\json-file\lead.json"
@@ -32,7 +32,7 @@ class Lead:
             leadContent["leads"].append(leadEntry)
 
             # Rewrite JSON file with updated entry
-            json.dump(leadContent, lead)
+            dump(leadContent, lead)
 
         return "Lead added."
 
@@ -42,7 +42,7 @@ class Lead:
         with open(fileLocation, "r") as lead:
 
             # Loads JSON file content
-            leadContent = json.load(lead)
+            leadContent = load(lead)
 
         return leadContent
     
