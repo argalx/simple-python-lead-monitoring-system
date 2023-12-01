@@ -34,6 +34,11 @@
             "name": "Itadori Yuji",
             "phoneNumber": 9171239595,
             "email": "itadori@gmail.com"
+        },
+        {
+            "name": "Gojo Saturo",
+            "phoneNumber": 9171239595,
+            "email": "goho@gmail.com"
         }
     ]
 }
